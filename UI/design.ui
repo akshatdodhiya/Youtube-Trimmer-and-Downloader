@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <author>Akshat Dodhiya</author>
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>485</width>
+    <height>648</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Youtube Trimmer and Downloader</string>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="link_label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Enter Link</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="link_input">
+    <property name="geometry">
+     <rect>
+      <x>99</x>
+      <y>10</y>
+      <width>350</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="trim_checkBox">
+    <property name="geometry">
+     <rect>
+      <x>99</x>
+      <y>40</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="whatsThis">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Want to trim the video</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ok_btn">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>366</x>
+      <y>40</y>
+      <width>85</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>OK</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="videoQuality_label">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>31</x>
+      <y>165</y>
+      <width>130</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Available Video Quality</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="videoQuality_list">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>190</y>
+      <width>420</width>
+      <height>131</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="tag_input">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>136</x>
+      <y>330</y>
+      <width>130</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tag_label">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>330</y>
+      <width>110</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Enter tag number</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="selectPath_btn">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>328</y>
+      <width>85</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Select Path</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="path_label">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>373</y>
+      <width>301</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Path:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="download_btn">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>365</x>
+      <y>410</y>
+      <width>85</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Download</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="trim_label">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>480</y>
+      <width>110</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Trimmer</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="startTime_label">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>500</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Start Time:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="startTime_input">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>500</y>
+      <width>130</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="inputMask">
+     <string>00:00</string>
+    </property>
+    <property name="text">
+     <string>00:00</string>
+    </property>
+    <property name="cursorPosition">
+     <number>1</number>
+    </property>
+    <property name="dragEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="endTime_label">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>500</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>End Time:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="trimVideo_btn">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>365</x>
+      <y>530</y>
+      <width>85</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Trim Video</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="endTime_input">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>500</y>
+      <width>130</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="inputMask">
+     <string>00:00</string>
+    </property>
+    <property name="text">
+     <string>00:00</string>
+    </property>
+    <property name="cursorPosition">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="videoDetails_label">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>80</y>
+      <width>130</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Video Details</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="videoDetails_list">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>101</y>
+      <width>420</width>
+      <height>61</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="defaultPath_checkBox">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>380</y>
+      <width>110</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Set as default path</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="changePath_btn">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>329</y>
+      <width>80</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Change Path</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="download_progressBar">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>32</x>
+      <y>450</y>
+      <width>420</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="watermark">
+    <property name="geometry">
+     <rect>
+      <x>138</x>
+      <y>597</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Britannic Bold</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>BlankCursor</cursorShape>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="text">
+     <string>Made with ❤ by Akshat Dodhiya</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::RichText</enum>
+    </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bmc">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>557</y>
+      <width>130</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Britannic Bold</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="text">
+     <string>Buy Me A Coffee ☕</string>
+    </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="website">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>557</y>
+      <width>130</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Britannic Bold</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="text">
+     <string>Visit My Website 🌐</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::RichText</enum>
+    </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
