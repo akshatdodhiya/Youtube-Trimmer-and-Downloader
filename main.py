@@ -1,5 +1,5 @@
 from PyQt5.QtWidgets import *
-from PyQt5.QtGui import QPixmap
+from PyQt5.QtGui import QPixmap, QIcon
 from PyQt5 import uic
 import os
 import time
@@ -12,6 +12,7 @@ class YtGui(QMainWindow):
         # noinspection PyArgumentList
         super(YtGui, self).__init__()
         uic.loadUi("UI/design.ui", self)  # Loads ui file from UI directory, made using Qt designer
+        self.setWindowIcon(QIcon("UI/icon.png"))
         akshat = QPixmap("UI/watermark.png")  # Load watermark image
         self.watermark.setPixmap(akshat)  # Show watermark image instead of normal label
         # Visit website label with hyperlink
