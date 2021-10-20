@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/badge/Version-1.0-success)
+![Version](https://img.shields.io/badge/Version-1.0-success)    ![Language](https://img.shields.io/badge/Language-Python-blue?style=plastic&logo=python)
 
 # YOUTUBE Trimmer and Downloader
 An easy to use gui based youtube downloader plus trimmer.
