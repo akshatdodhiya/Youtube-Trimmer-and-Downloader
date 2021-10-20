@@ -9,7 +9,7 @@ An easy to use gui based youtube downloader plus trimmer.
 * Exception handling is done quite well to provide a smooth user experience
 
 ## How to Use:
-### To use this program, python 3.x must be installed in your machine.
+#### Note: To use this program, python 3.x must be installed in your machine.
 
 Step 1: Clone the repository:
 
@@ -23,7 +23,8 @@ Step 3: Run the main file:
 
 ```python3 main.py```
 
-### The GUI window will be opened if the installation part is done correctly and then you can use the software to download your videos
+
+#### The GUI window will be opened if the installation part is done correctly and then you can use the software to download your videos
 
 
 ## If you like my work then, you can support me:
