@@ -10,7 +10,7 @@ An easy to use gui based youtube downloader plus trimmer.
 * After downloading, if user wants then he/she can trim and get only a specific portion of the video and the redundant part will be removed without taking any space
 * Exception handling is done quite well to provide a smooth user experience
 
-## UI of the app:
+## The User Interface:
 ![Image-1](https://github.com/akshatdodhiya/Youtube-Trimmer-and-Downloader/blob/main/UI/Youtube%20Trimmer%20and%20Downloader.png)  
 
 
