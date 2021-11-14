@@ -269,6 +269,7 @@ class YtGui(QMainWindow):
                         for key, value in codecs_available.items():
                             if val == value:
                                 return key
+                        return None
 
                     # Full path where the file after trimming will be stored
                     file_path = f'{self.path}\\{self.video_name.split(".")[0]} - Youtube Trimmer by Akshat Dodhiya.' \
@@ -289,6 +290,8 @@ class YtGui(QMainWindow):
                                             f' - Youtube Trimmer by Akshat Dodhiya - {int(time.time())}.' \
                                             f'{self.video_name.split(".")[1]}'
                                 clip.write_videofile(file_path, codec=codec)
+                            else:
+                                raise Exception
                             editor.VideoFileClip.close(clip)  # Close clip if tasked accomplished
                             # Delete original big video file after successful trimming
                             if os.path.exists(self.path + "\\" + self.video_name):
