@@ -1,14 +1,13 @@
 ![Version](https://img.shields.io/badge/Version-1.0-success)    ![Language](https://img.shields.io/badge/Language-Python-blue?style=plastic&logo=python)
 
 # YOUTUBE Trimmer and Downloader
-An easy to use gui based youtube downloader plus trimmer.
+An easy-to-use GUI-based YouTube downloader and video trimmer.
 
 ![Thumbnail](https://github.com/akshatdodhiya/Youtube-Trimmer-and-Downloader/blob/main/UI/thumbnail.jpg)
 
 ## Features:
 * Video can be downloaded in any desirable quality
-* After downloading, if user wants then he/she can trim and get only a specific portion of the video and the redundant part will be removed without taking any space
-* Exception handling is done quite well to provide a smooth user experience
+* After downloading, the user gets an option to trim the video if needed.
 
 ## The User Interface:
 ![Image-1](https://github.com/akshatdodhiya/Youtube-Trimmer-and-Downloader/blob/main/UI/Youtube%20Trimmer%20and%20Downloader.png)  
