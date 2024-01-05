@@ -3,8 +3,6 @@
 # YOUTUBE Trimmer and Downloader
 An easy-to-use GUI-based YouTube downloader and video trimmer.
 
-![Thumbnail](https://github.com/akshatdodhiya/Youtube-Trimmer-and-Downloader/blob/main/UI/thumbnail.jpg)
-
 ## Features:
 * Video can be downloaded in any desirable quality
 * After downloading, the user gets an option to trim the video if needed.
